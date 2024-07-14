@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form action="#" name="formfill" onsubmit="return validation()">
+                <h2>Registration Form</h2>
+                <div class="input-box">
+                    <i class='bx bxs-user'></i>
+                    <p id="result"></p>
+                    <input type="text" name="Username" placeholder="Enter Username">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-envelope' ></i>
+                    <input type="email" name="email" placeholder="Enter Mail Id">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-open-alt'></i>
+                    <input type="password" name="password" placeholder="Enter Password">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-open-alt'></i>
+                    <input type="password" name="cpassword" placeholder="Confirm Password">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-phone' ></i>
+                    <input type="text" name="mobile" placeholder="Enter Mobile Number">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+                <div class="group">
+                    <span><a href="#">Forget-Password</a></span>
+                    <span><a href="#">Forget-Password</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Overlay for dimming the background -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Popup for success message -->
+    <div class="popup" id="popup">
+        <i class="fa-solid fa-check"></i>
+        <h1>Thank You!</h1>
+        <h3>Your Registration Completed Successfully!</h3>
+        <button onclick="closeslide()">OK</button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
